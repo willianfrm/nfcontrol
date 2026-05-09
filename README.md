@@ -19,18 +19,22 @@ Sistema corporativo para protocolo e recebimento de notas fiscais, voltado ao va
 
 
 ## ⚙️ Requisitos, Instalação e Configuração
-- Requisitos:
-  - 
-Servidor de sua preferência (Windows ou Linux), Apache com PHP 7.0 ou superior, Mysql ou MariaDB, XAMPP ou WAMPP server serão uma boa escolha.
 
-- Instalação e Configuração:
-  -
+- PHP 7.0+
+- Apache
+- MySQL ou MariaDB
+- Windows ou Linux
+- XAMPP/WAMP/LAMP (opcional)
+
+## ⚙️ Instalação
+
 1. Clone o repositório
-2. Configure o banco de dados utilizando o arquivo:
-   banco.sql
-3. Ajuste as configurações no arquivo:
-   config.php
-4. Execute o projeto em um servidor local
+2. Importe o arquivo:
+   `database/banco.sql`
+3. Configure o arquivo:
+   `config.php`
+4. Inicie o servidor Apache
+5. Acesse o sistema pelo navegador
 
 
 ## ▶️ Como utilizar
@@ -130,3 +134,16 @@ As informações exibidas são atualizadas automaticamente conforme as ações r
 public/ → arquivos acessíveis via navegador  
 database/ → scripts do banco de dados  
 docs/ → imagens e documentação  
+
+## 🛠️ Tecnologias Utilizadas
+
+- PHP
+- MySQL / MariaDB
+- Apache
+- Bootstrap 5
+- JavaScript
+- HTML5 / CSS3
+
+## 📌 Status do Projeto
+
+Projeto em desenvolvimento contínuo, utilizado para estudos, melhorias operacionais e evolução de processos de recebimento fiscal.
