@@ -35,9 +35,94 @@ Servidor de sua preferência (Windows ou Linux), Apache com PHP 7.0 ou superior,
 
 ## ▶️ Como utilizar
 
-1. Acesse o sistema pelo navegador
-2. Realize o recebimento de notas fiscais
-3. Acompanhe os registros no painel em tempo real
+
+### 1. Tela Inicial (HOME)
+
+A tela inicial possui um menu simples e intuitivo, contendo atalhos para as principais funcionalidades do sistema.
+
+![Tela Inicial](docs/home.png)
+
+---
+
+### 2. Cadastro de Fornecedores
+
+O módulo de cadastro de fornecedores é responsável por registrar os fornecedores utilizados pelo sistema.
+
+Ao adicionar um novo fornecedor, o sistema realiza automaticamente uma verificação em todas as notas fiscais já protocoladas, inclusive de períodos anteriores, substituindo registros identificados como **"FORNECEDOR NÃO ENCONTRADO"** pelo nome correto do fornecedor.
+
+![Cadastro de Fornecedores](docs/cadastro.png)
+
+---
+
+### 3. Protocolando sua primeira Nota Fiscal
+
+A página **"Recebimento Protocolo"** é responsável por iniciar o processo de recebimento da nota fiscal no sistema.  
+Este módulo normalmente é utilizado pela portaria ou equipe responsável pelo recebimento físico das mercadorias.
+
+![Recebimento Protocolo](docs/protocolo1.png)
+
+Para iniciar o processo, basta coletar ou digitar a chave da NF-e no campo indicado.  
+O sistema carregará automaticamente as informações da nota fiscal e exibirá os dados para conferência.
+
+![Consulta da Nota Fiscal](docs/protocolo2.png)
+
+Após o carregamento da NF-e, o usuário poderá:
+
+- Bipar os boletos vinculados à nota fiscal;
+- Validar informações financeiras como valor e vencimento;
+- Finalizar o protocolo da nota fiscal.
+
+Essas informações são essenciais para o setor de CPD realizar as análises fiscais e comerciais.
+
+Para concluir o processo e inserir a nota fiscal no protocolo, basta coletar ou digitar novamente a chave da NF-e.
+
+![Finalização do Protocolo](docs/protocolo3.png)
+
+---
+
+### 4. Análise do CPD
+
+Após o protocolo realizado pela portaria, o setor de CPD (Portaria Eletrônica) passa a analisar as notas fiscais recebidas.
+
+Nesta etapa são realizadas validações como:
+
+- Conferência de pedidos;
+- Verificação de impostos;
+- Conferência de cadastros;
+- Análises fiscais e comerciais.
+
+As notas fiscais ficam disponíveis na tela de recebimento do CPD em tempo real.
+
+![Tela do CPD](docs/recebimento1.png)
+
+Durante a análise, o operador pode:
+
+- Registrar eventos ou inconsistências encontradas;
+- Informar pendências relacionadas à nota fiscal;
+- Liberar a nota para recebimento;
+- Finalizar o processamento após atualização no sistema.
+
+![Processamento da Nota Fiscal](docs/recebimento2.png)
+
+---
+
+### 5. Informações em tempo real no Painel
+
+O painel de acompanhamento possui a função de informar, em tempo real, o status atual dos fornecedores e das notas fiscais em processamento.
+
+As informações exibidas são atualizadas automaticamente conforme as ações realizadas pelo setor de CPD.
+
+#### Fornecedor recém protocolado pela portaria
+
+![Fornecedor Protocolado](docs/painel1.png)
+
+#### Nota fiscal com inconsistências
+
+![Nota Fiscal com Erro](docs/painel2.png)
+
+#### Nota fiscal liberada para recebimento
+
+![Fornecedor Liberado](docs/painel3.png)
 
 
 ## 📂 Estrutura do Projeto
